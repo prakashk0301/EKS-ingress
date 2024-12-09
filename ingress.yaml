@@ -15,3 +15,15 @@ spec:
             name: my-service-demo
             port:
               number: 80
+
+ # how to do path based routing, just uncomment below section and comment out host based routing section
+ # - host: punecloud.in           #path based routing
+ #   http:
+ #     paths:    
+ #     - pathType: Prefix
+ #       path: /steam1
+ #       backend:
+ #         service:
+ #           name: my-service-demo
+ #           port:
+ #             number: 80
